@@ -25,6 +25,9 @@ int main(void) {
     std::cout << p[i].m_iX << '\t';
     std::cout << p[i].m_iY << '\n';
   }
+  p++;
+  delete []p;
+  p = NULL;
   std::cin.get();
   return 0;
 }
