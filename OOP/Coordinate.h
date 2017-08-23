@@ -1,7 +1,3 @@
-#include <iostream>
-#include <string>
-
-using namespace std;
 class Coordinate
 {
 public:
@@ -11,7 +7,7 @@ public:
   int getX();
   void setY(int y);
   int getY();
-private:
+public:
   int m_iX;
   int m_iY;
 };

@@ -9,6 +9,6 @@ public:
   void setB(int x, int y);
   void printInfo();
 private:
-  Coordinate m_coorA;
-  Coordinate m_coorB;
+  Coordinate *m_pCoorA;
+  Coordinate *m_pCoorB;
 };
