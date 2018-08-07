@@ -110,19 +110,19 @@ void InputWidget::initLineEditTab()
     ui->comboBox->addItems(textList);
 
     //输入方向-垂直
-     textList.clear();
-     textList << "AlignTop" <<"AlignBottom" << "AlignVCenter" << "AlignBaseline";
-     ui->comboBox_2->addItems(textList);
+    textList.clear();
+    textList << "AlignTop" <<"AlignBottom" << "AlignVCenter" << "AlignBaseline";
+    ui->comboBox_2->addItems(textList);
 
-     //输入模式
-     textList.clear();
-     textList << "Normal" <<"NoEcho" << "Password" << "PasswordEchoOnEdit";
-     ui->comboBox_3->addItems(textList);
+    //输入模式
+    textList.clear();
+    textList << "Normal" <<"NoEcho" << "Password" << "PasswordEchoOnEdit";
+    ui->comboBox_3->addItems(textList);
 
-     //验证器
-     textList.clear();
-     textList << "无验证器" << "Int" <<"Double" << "Reqexp";
-     ui->comboBox_4->addItems(textList);
+    //验证器
+    textList.clear();
+    textList << "无验证器" << "Int" <<"Double" << "Reqexp";
+    ui->comboBox_4->addItems(textList);
 }
 
 void InputWidget::initTextEditTab()
