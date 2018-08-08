@@ -25,10 +25,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindowmenu.cpp
+        mainwindowmenu.cpp \
+    selectcolorwidget.cpp
 
 HEADERS += \
-        mainwindowmenu.h
+        mainwindowmenu.h \
+    selectcolorwidget.h
 
 FORMS += \
-        mainwindowmenu.ui
+        mainwindowmenu.ui \
+    selectcolorwidget.ui
+
+RESOURCES += \
+    resource.qrc
