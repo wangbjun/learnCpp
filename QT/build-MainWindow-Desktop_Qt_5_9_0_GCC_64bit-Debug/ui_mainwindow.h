@@ -13,9 +13,7 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QDockWidget>
 #include <QtWidgets/QHeaderView>
-#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
@@ -34,9 +32,6 @@ public:
     QMenu *menu_F;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
-    QDockWidget *dockWidget_2;
-    QWidget *dockWidgetContents_2;
-    QLabel *label;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -60,15 +55,6 @@ public:
         statusBar = new QStatusBar(MainWindow);
         statusBar->setObjectName(QStringLiteral("statusBar"));
         MainWindow->setStatusBar(statusBar);
-        dockWidget_2 = new QDockWidget(MainWindow);
-        dockWidget_2->setObjectName(QStringLiteral("dockWidget_2"));
-        dockWidgetContents_2 = new QWidget();
-        dockWidgetContents_2->setObjectName(QStringLiteral("dockWidgetContents_2"));
-        label = new QLabel(dockWidgetContents_2);
-        label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(290, 30, 67, 17));
-        dockWidget_2->setWidget(dockWidgetContents_2);
-        MainWindow->addDockWidget(static_cast<Qt::DockWidgetArea>(4), dockWidget_2);
 
         menuBar->addAction(menu_F->menuAction());
         mainToolBar->addAction(actionNewFile);
@@ -83,7 +69,6 @@ public:
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
         actionNewFile->setText(QApplication::translate("MainWindow", "\346\226\260\345\273\272\346\226\207\344\273\266(&N)", Q_NULLPTR));
         menu_F->setTitle(QApplication::translate("MainWindow", "\346\226\207\344\273\266(&F)", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "sadasdas", Q_NULLPTR));
     } // retranslateUi
 
 };
